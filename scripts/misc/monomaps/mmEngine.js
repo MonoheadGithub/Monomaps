@@ -603,8 +603,6 @@ function editMarker(e) {
       <label for='markerIcon'>Marker Icon <span class='badge badge-red'>Required</span><br>
       <input type='text' value='${mapID.icon}' id='markerIcon' class='monomaps-input' placeholder='question'>
       </label>
-      <br><br>
-      <a href="#" class='monomaps-maps-button-rounded' id='searchIcons'><i class='fa-solid fa-search'></i> Select an Icon</a>
       </div>
       <div>
       <label for='markerDescription' required>Description <span class='badge badge-red'>Required</span><br>
@@ -631,71 +629,6 @@ function editMarker(e) {
       </div>
       `
       );
-
-      document.getElementById('searchIcons').addEventListener('click', async (e) => {
-        if(document.getElementById('dropdownui')){
-          document.getElementById('dropdownui').remove();
-          return;
-        }
-
-        let DropdownUI = document.createElement("div");
-        DropdownUI.classList.add("dropdownUI");
-        DropdownUI.id = 'dropdownui';
-        DropdownUI.innerHTML = `
-        <h3 class="dropdownUI-Title">
-          Select a Icon <span class='badge badge-blue'>Beta</span>
-        </h3>
-        <span class='dropdownUI-Info'>More icons at <a href="https://fontawesome.com/search?o=r&s=solid" target="__blank">Font Awesome</a></span>
-        <hr>
-          <input type='text' id='searchBarIcons' placeholder='Search Icons'>
-          <ul id="iconLibrary">
-            
-          </ul>
-          `
-    
-          document.getElementById("infopanelEditor").appendChild(DropdownUI);
-       var a;
-       await fetch("https://www.monohead.dev/assets/fontawesome/metadata/icons.json")
-       .then((res) => res.json())
-       .then((data) => {
-         Object.entries(data).forEach(([key, value]) => {
-          if(value.styles[0] === 'solid'){
-            let newSelector = document.createElement('li');
-            newSelector.classList.add("iconSelector");
-            newSelector.dataset.selector = key;
-            newSelector.innerHTML = `<a><i class='fa-sharp fa-${key}'></i></a>`;
-    
-            newSelector.onclick = function() {
-              document.getElementById('markerIcon').focus();
-              document.getElementById('markerIcon').value = key;
-              document.getElementById('icon').innerHTML = `<i class='fa-solid fa-${key}'></i>`;
-              DropdownUI.remove();
-            }
-    
-            document.getElementById('iconLibrary').appendChild(newSelector);
-    
-          }
-         })
-       })
-    
-       document.getElementById('searchBarIcons').addEventListener('keyup', function() {
-        let icons = document.querySelectorAll('.iconSelector');
-        let length = document.getElementById('searchBarIcons').value;
-        for ( i = 0; i < icons.length; i++ ) {
-          if(length.length > 0){
-            if(icons[i].dataset.selector.indexOf(document.getElementById('searchBarIcons').value)){
-              icons[i].style.display = 'none';
-            }else{
-              icons[i].style.display = 'block';
-            }
-          }else{
-            icons[i].style.display = 'block';
-          }
-        }
-       })
-    
-    
-      })
 
       document.getElementById("imageUrl").addEventListener("keyup", (e) => {
         document.getElementById("img").src =
@@ -1103,8 +1036,6 @@ function addCustomMarker(x, y) {
       <label for='markerIcon'>Marker Icon <span class='badge badge-red'>Required</span><br>
       <input type='text' value='' id='markerIcon' class='monomaps-input' placeholder='question'>
       </label>
-      <br><br>
-      <a href="#" class='monomaps-maps-button-rounded' id='searchIcons'><i class='fa-solid fa-search'></i> Select an Icon</a>
       </div>
       <div>
       <label for='markerDescription'>Description <span class='badge badge-red'>Required</span><br>
@@ -1126,85 +1057,6 @@ function addCustomMarker(x, y) {
       </div>
       `
   );
-  
-  // <a class='monomaps-maps-button-rounded' onclick='importcm()'><i class='fa-solid fa-file-import'></i> Import Custom Marker</a>
-
-  // $('#markerIcon').iconpicker({
-  //   hideOnSelect: true,
-  //   fullClassFormatter: function(val) {
-  //     return 'fas' + val;
-  //   },
-  // });
-
-  // $('#markerIcon').on('iconpickerSelected', function(event){
-  //   document.querySelector('#markerIcon').value = event.iconpickerValue.replaceAll(" ","").replace("fas", "").replace("fa-","");
-  //   document.getElementById('icon').innerHTML = `<i class='fa-solid fa-${document.getElementById('markerIcon').value}'></i>`;
-  // });
-
-  document.getElementById('searchIcons').addEventListener('click', async (e) => {
-    if(document.getElementById('dropdownui')){
-      document.getElementById('dropdownui').remove();
-      return;
-    }
-
-    let DropdownUI = document.createElement("div");
-    DropdownUI.classList.add("dropdownUI");
-    DropdownUI.id = 'dropdownui';
-    DropdownUI.innerHTML = `
-    <h3 class="dropdownUI-Title">
-      Select a Icon <span class='badge badge-blue'>Beta</span>
-    </h3>
-    <span class='dropdownUI-Info'>More icons at <a href="https://fontawesome.com/search?o=r&s=solid" target="__blank">Font Awesome</a></span>
-    <hr>
-      <input type='text' id='searchBarIcons' placeholder='Search Icons'>
-      <ul id="iconLibrary">
-        
-      </ul>
-      `
-
-      document.getElementById("infopanelEditor").appendChild(DropdownUI);
-   var a;
-   await fetch("https://www.monohead.dev/assets/fontawesome/metadata/icons.json")
-   .then((res) => res.json())
-   .then((data) => {
-     Object.entries(data).forEach(([key, value]) => {
-      if(value.styles[0] === 'solid'){
-        let newSelector = document.createElement('li');
-        newSelector.classList.add("iconSelector");
-        newSelector.dataset.selector = key;
-        newSelector.innerHTML = `<a><i class='fa-sharp fa-${key}'></i></a>`;
-
-        newSelector.onclick = function() {
-          document.getElementById('markerIcon').focus();
-          document.getElementById('markerIcon').value = key;
-          document.getElementById('icon').innerHTML = `<i class='fa-solid fa-${key}'></i>`;
-          DropdownUI.remove();
-        }
-
-        document.getElementById('iconLibrary').appendChild(newSelector);
-
-      }
-     })
-   })
-
-   document.getElementById('searchBarIcons').addEventListener('keyup', function() {
-    let icons = document.querySelectorAll('.iconSelector');
-    let length = document.getElementById('searchBarIcons').value;
-    for ( i = 0; i < icons.length; i++ ) {
-      if(length.length > 0){
-        if(icons[i].dataset.selector.indexOf(document.getElementById('searchBarIcons').value)){
-          icons[i].style.display = 'none';
-        }else{
-          icons[i].style.display = 'block';
-        }
-      }else{
-        icons[i].style.display = 'block';
-      }
-    }
-   })
-
-
-  })
 
   document.getElementById("submit").addEventListener("click", (e) => {
     let image = document.getElementById("imageUrl").value;
