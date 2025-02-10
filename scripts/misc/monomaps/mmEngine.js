@@ -869,15 +869,12 @@ scope.addEventListener('contextmenu', async (event) => {
     <hr>
     <div class='context-item' onclick='copyCoordinates(${event.target.dataset.x}, ${event.target.dataset.y})'><i class='fa-solid fa-copy'></i> Copy Coordinates</div>
     <div class="context-item" onclick='shareMarker(${event.target.id})'><i class='fa-solid fa-share'></i> Share Marker</div>
-    <div class="context-item" onclick='reportMarker(${event.target.id})'><i class='fa-solid fa-flag'></i> Report Marker</div>
     `;
   } else if (event.target.dataset.contextType === "Maparea") {
     contextMenu.innerHTML = `
     <div class="context-item-text">Monomaps</div>
     <hr>
-    <div class="context-item" onclick='reportCoordinates(${posX}, ${posY})'><i class='fa-solid fa-flag'></i> Report Coordinates</div>
     <div class='context-item' onclick='copyCoordinates(${posX}, ${posY})'><i class='fa-solid fa-copy'></i> Copy Coordinates</div>
-    <div class="context-item" onclick='addCustomMarker(${posX}, ${posY})'><i class='fa-solid fa-location-dot'></i> Create Marker Here</div>
     `;
   } else if (event.target.dataset.contextType === "Custom") {
     contextMenu.innerHTML = `
