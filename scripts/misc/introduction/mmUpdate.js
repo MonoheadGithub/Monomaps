@@ -1,5 +1,5 @@
 let introConfirm = localStorage.getItem('introConfirm');
-let introductionVersion = 'v2.1.6';
+let introductionVersion = 'v2.1.8';
 
 document.getElementById('version').innerText = introductionVersion;
 
@@ -13,3 +13,5 @@ if (!introConfirm || introConfirm !== introductionVersion) {
   })
   localStorage.setItem('introConfirm', introductionVersion);
 }
+
+// I'm getting rid of this garbage soon, why tf did i even do this for.
