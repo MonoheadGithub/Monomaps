@@ -102,10 +102,12 @@ body {
     height: 2048px;
     background: #040404;
     background-size: 2048px 2048px;
-    transition: 500ms;
-    transform: scale(1);
+    transition: transform 300ms ease-out;
+    transform: translateZ(0);
     transform-origin: 0 0;
     display: none;
+    contain: strict;
+    will-change: transform;
 }
 
 #mmMarkers {
@@ -646,26 +648,6 @@ hr {
 @keyframes fadeout {
     from { opacity: 1; }
     to   { opacity: 0; }
-}
-
-@keyframes slidein {
-    from {
-      left: -401px;
-    }
-  
-    to {
-      left: 0px;
-    }
-  }
-
-@keyframes slideout {
-    from {
-        left: 0px;
-    }
-
-    to {
-        left: -410px;
-    }
 }
 
 .pulse {
