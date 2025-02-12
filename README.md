@@ -1,6 +1,6 @@
 # MonoMaps
 
-![MonoMaps Screenshot](path/to/your/image.png)
+![MonoMaps Screenshot](https://i.postimg.cc/FKTFZJJH/475759802-634894792246298-5910258826738637-n.jpg)
 
 [![Last Commit](https://img.shields.io/github/last-commit/MonoheadGithub/Monomaps/dev)](https://github.com/MonoheadGithub/Monomaps/commits/dev)
 [![Open Issues](https://img.shields.io/github/issues/MonoheadGithub/Monomaps)](https://github.com/MonoheadGithub/Monomaps/issues)
