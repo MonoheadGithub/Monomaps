@@ -1,6 +1,5 @@
 let introConfirm = localStorage.getItem('introConfirm');
-let introductionVersion = '40f2df0';
-
+let introductionVersion = 'v2.1.8';
 
 document.getElementById('version').innerText = introductionVersion;
 
