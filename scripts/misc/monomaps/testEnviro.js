@@ -1,1 +1,0 @@
-[{ "id": "41704609", "monomaps": { "name": "No Name Provided", "description": "No Description Provided", "image": "" }, "monomaps_data": { "map": "Layer1", "iconSize": 32, "hoverSize": 40, "preview": true, "type": "Custom", "position": "absolute", "top": "165", "left": "845", "icon": "unicorn", "marker": "markerFancy", "color": "#ffffff", "event": "customMarker(this.id)" } }]
