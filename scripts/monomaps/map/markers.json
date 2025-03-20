@@ -1,0 +1,48 @@
+[
+    {
+        "type": "Rentable",
+        "markers": [
+            {
+                "id": 1,
+                "image": "https://i.postimg.cc/PqWZ9pJT/rp-monoford-v1j0209.jpg",
+                "name": "Sutherlin Estate",
+                "street": 0,
+                "map": "Layer1",
+                "rent": {
+                    "type": "Residential",
+                    "price": 583,
+                    "doors": 33,
+                    "plugs": 20
+                },
+                "position": {
+                    "lat": -23.875,
+                    "lng": 14.141492618777557
+                },
+                "icon": "house",
+                "color": "#21a934",
+                "size": 2
+            },
+            {
+                "id": 2,
+                "image": "https://i.postimg.cc/BbQxxSqs/rp-monoford-v1j0208.jpg",
+                "name": "Lolas Mansion",
+                "street": 0,
+                "map": "Layer2",
+                "rent": {
+                    "type": "Residential",
+                    "price": 292,
+                    "doors": 17,
+                    "plugs": 15
+                },
+                "position": {
+                    "lat": -18.625,
+                    "lng": 69.38725193378646
+                },
+                "icon": "house",
+                "color": "#21a934",
+                "size": 2
+            }
+        ]
+        
+    }
+]

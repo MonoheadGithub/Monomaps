@@ -1,0 +1,211 @@
+[
+    {
+        "layer": "layer1",
+        "maps": [
+            {
+                "id": "juniper",
+                "name": "Juniper",
+                "image": "https://i.postimg.cc/WdQHQjYc/juniper-heights.jpg",
+                "streets": [
+                    {
+                        "id": 0,
+                        "name": "Liberty Dr"
+                    },
+                    {
+                        "id": 1,
+                        "name": "Mountain Rd Highway 18"
+                    }
+                ]
+            },
+            {
+                "id": "lower_alder",
+                "name": "Lower Alder",
+                "image": "https://i.postimg.cc/r0TYwjLh/loweralder.jpg",
+                "streets": [
+                    {
+                        "id": 2,
+                        "name": "Crooke Cres"
+                    },
+                    {
+                        "id": 3,
+                        "name": "113th Ave"
+                    },
+                    {
+                        "id": 4,
+                        "name": "69th St"
+                    },
+                    {
+                        "id": 5,
+                        "name": "72nd St"
+                    },
+                    {
+                        "id": 6,
+                        "name": "121st Ave"
+                    },
+                    {
+                        "id": 7,
+                        "name": "President Bay"
+                    },
+                    {
+                        "id": 8,
+                        "name": "142nd Ave"
+                    },
+                    {
+                        "id": 26,
+                        "name": "Interstate 84"
+                    }
+                ] 
+            },
+            {
+                "id": "sunset_island",
+                "name": "Sunset Island",
+                "image": "https://i.postimg.cc/mzSpz9LT/sunset.jpg",
+                "streets": [
+                    {
+                        "id": 9,
+                        "name": "Sunset Dr"
+                    },
+                    {
+                        "id": 10,
+                        "name": "Skyline St"
+                    },
+                    {
+                        "id": 11,
+                        "name": "Central Ave"
+                    },
+                    {
+                        "id": 12,
+                        "name": "Crown Ave"
+                    },
+                    {
+                        "id": 13,
+                        "name": "Harbor Rd"
+                    },
+                    {
+                        "id": 14,
+                        "name": "Mountain Rd Highway 18"
+                    },
+                    {
+                        "id": 15,
+                        "name": "Industrial Rd"
+                    },
+                    {
+                        "id": 16,
+                        "name": "Trinity Passage"
+                    }
+                ]
+            },
+            {
+                "id": "port_of_boxer",
+                "name": "Port of Boxer",
+                "image": "https://i.postimg.cc/87FYKsHb/cargoship.jpg",
+                "streets": []
+            },
+            {
+                "id": "reed",
+                "name": "Reed",
+                "image": "https://i.postimg.cc/5HLRJGDY/reed-industrial.jpg",
+                "streets": [
+                    {
+                        "id": 17,
+                        "name": "Industrial Rd"
+                    },
+                    {
+                        "id": 18,
+                        "name": "Power St"
+                    },
+                    {
+                        "id": 19,
+                        "name": "Mill Rd"
+                    },
+                    {
+                        "id": 20,
+                        "name": "November St"
+                    },
+                    {
+                        "id": 21,
+                        "name": "Battery Ave"
+                    }
+                ]
+            },
+            {
+                "id": "kingfisher",
+                "name": "Kingfisher",
+                "image": "https://i.postimg.cc/PqjvWX4c/rp-monoford-v1j0213.jpg",
+                "streets": [
+                    {
+                        "id": 22,
+                        "name": "Mill Rd"
+                    },
+                    {
+                        "id": 23,
+                        "name": "69th St"
+                    },
+                    {
+                        "id": 24,
+                        "name": "Evo Ln"
+                    },
+                    {
+                        "id": 25,
+                        "name": "Sater Bay"
+                    },
+                    {
+                        "id": 27,
+                        "name": "Interstate 84"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "layer": "layer2",
+        "maps": [
+            {
+                "id": "falcon_creek",
+                "name": "Falcon Creek",
+                "image": "https://i.postimg.cc/BbQxxSqs/rp-monoford-v1j0208.jpg",
+                "streets": [
+                    {
+                        "id": 28,
+                        "name": "Interstate 84"
+                    },
+                    {
+                        "id": 29,
+                        "name": "Highway 18"
+                    },
+                    {
+                        "id": 30,
+                        "name": "Falcon Rd"
+                    },
+                    {
+                        "id": 31,
+                        "name": "Lake Dr"
+                    },
+                    {
+                        "id": 32,
+                        "name": "Main St. Highway 18"
+                    },
+                    {
+                        "id": 33,
+                        "name": "Federal Way"
+                    },
+                    {
+                        "id": 34,
+                        "name": "Pine Dr"
+                    }
+                ]
+            },
+            {
+                "id": "mines",
+                "name": "Mines",
+                "image": "https://i.postimg.cc/BbQxxSqs/rp-monoford-v1j0208.jpg",
+                "streets": [
+                    {
+                        "id": 35,
+                        "name": "Millennium Rd"
+                    }
+                ]
+            }
+        ]
+    }
+]

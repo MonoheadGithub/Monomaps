@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+  <link rel="stylesheet" href="/stylesheet/style.css" />
+  <link rel="stylesheet" href="/stylesheet/search.css" />
+  <link rel="stylesheet" href="/stylesheet/notify.css" />
+  <link rel="stylesheet" href="/stylesheet/markers.css" />
+  <title>Monomaps</title>
+</head>
+
+<body>
+  <div class="monomaps-container">
+
+    <div id="search">
+      <form>
+        <input type="text" id="search-field" placeholder="Search MonoMaps" autocomplete="off">
+        <button type="submit" id="search-btn" class="search-button"><i
+            class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+      <div class="search-history-container" id="search-container">
+        <ul id="search-results">
+          <!-- Search results will be dynamically populated here -->
+        </ul>
+      </div>
+    </div>
+
+    <div id="filters">
+
+    </div>
+    <div id="menu">
+      <nav>
+        <ul id="menu-list">
+          <div id="menu-feats">
+            <li class="menu-item">
+              <i class="fa fa-bars"></i>
+              <span></span>
+            </li>
+            <li class="menu-item">
+              <i class="fa fa-bookmark"></i>
+              <span>Saved</span>
+            </li>
+            <li class="menu-item">
+              <i class="fa fa-clock"></i>
+              <span>Recents</span>
+            </li>
+          </div>
+          <hr />
+          <div id="menu-map">
+
+          </div>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="marker-canvas">
+      <div class="canvas-content">
+        <button class="close-canvas">&times;</button>
+        <img src="" alt="Location Image" class="canvas-image" />
+        <div class="canvas-box">
+          <h2 class="canvas-title"></h2>
+          <p class="canvas-address"></p>
+          <p class="canvas-description"></p>
+        </div>
+      </div>
+    </div>
+
+    <img src="/assets/monomaps/logos/signatureLogo.png" alt="Monomaps Logo" id="logo">
+
+    <div id="map"></div>
+  </div>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="/scripts/monomaps/markers.js"></script>
+  <script src="/scripts/monomaps/notify.js" defer></script>
+  <script src="/scripts/monomaps/script.js" defer></script>
+  <script src="/scripts/monomaps/search.js" defer></script>
+  <script src="/scripts/monomaps/context-menu.js" defer></script>
+  <script src="/scripts/monomaps/temp-tools.js"></script>
+  <script src="/scripts/monomaps/side-menu.js"></script>
+</body>
+
+</html>
