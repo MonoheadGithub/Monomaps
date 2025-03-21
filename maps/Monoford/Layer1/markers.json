@@ -1,0 +1,58 @@
+{
+    "meta": {
+        "map" : "Monoford: Sunset Island",
+        "version": "1.0.0",
+        "map_resolution": [2048, 2048],
+        "categories" : [
+            {
+                "type": "rent_location",
+                "name": "Rentable Properties",
+                "filter": {
+                    "visible": true
+                },
+                "markers": []
+            },
+            {
+                "type": "npc_location",
+                "name": "NPCs",
+                "filter": {
+                    "visible": true
+                },
+                "markers": []
+            },
+            {
+                "type": "job_location",
+                "name": "Jobs",
+                "filter": {
+                    "visible": true
+                },
+                "markers": []
+            },
+            {
+                "type": "resource_location",
+                "name": "Resources",
+                "filter": {
+                    "visible": true
+                },
+                "markers": []
+            },
+            {
+                "type": "misc_location",
+                "name": "Miscellaneous",
+                "filter": {
+                    "visible": true
+                },
+                "markers": []
+            },
+            {
+                "type": "easter_event",
+                "name": "Easter Event Locations",
+                "filter": {
+                    "visible": false,
+                    "disabled": true
+                },
+                "markers": []
+            }
+        ]
+    }
+}
