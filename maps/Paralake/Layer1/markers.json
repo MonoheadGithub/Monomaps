@@ -27,7 +27,32 @@
                 "filter": {
                     "visible": true
                 },
-                "markers": []
+                "markers": [
+                    {
+                        "name": "Fire Department",
+                        "description": "Fight Fighters are extensively trained in firefighting, primarily to extinguish hazardous fires that threaten property and human or natural populations.",
+                        "icon": "fire_red",
+                        "latlng": [1932.00, 173.00]
+                    },
+                    {
+                        "name": "Police Department",
+                        "description": "To Protect & Serve, the Police Department goes on Patrol, Answers 911 Calls and Protect the City from Mayham, this is where they're staioned and prisoners are processed.",
+                        "icon": "police_blue",
+                        "latlng": [1785.00, 416.00]
+                    },
+                    {
+                        "name": "Hospital",
+                        "description": "Emergency personnel for life-threatening situations, this is where the EMS are stationed, you'll also respawn here and you can also purchase medical supplies here.",
+                        "icon": "hospital_red",
+                        "latlng": [1511.00, 429.00]
+                    },
+                    {
+                        "name": "Eagle Post",
+                        "description": "Become a delivery driver and take packages to various locations; this is where the drivers are stationed at.",
+                        "icon": "post_brown",
+                        "latlng": [616.00, 766.00]
+                    }
+                ]
             },
             {
                 "type": "resource_location",
@@ -40,6 +65,14 @@
             {
                 "type": "misc_location",
                 "name": "Miscellaneous",
+                "filter": {
+                    "visible": true
+                },
+                "markers": []
+            },
+            {
+                "type": "illegal_location",
+                "name": "Illegal",
                 "filter": {
                     "visible": true
                 },
